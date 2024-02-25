@@ -1,0 +1,10 @@
+all:	showdir
+
+showdir:	showdir.o
+	g++ -o showdir showdir.o
+
+showdir.o:	showdir.cpp
+	g++ -c showdir.cpp
+
+clean:
+	rm -f showdir showdir.o
