@@ -11,7 +11,7 @@
 
 std::mutex mtx;
 bool stopSearch = false;
-std::vector<std::string> pendingDirectories;
+std::vector<std::string> pendingDirectories; // using vector and mutex for searching file without recursive function
 
 void findFile(const std::string& target) {
     while (true) {
